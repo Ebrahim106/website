@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../Materials/background-4.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:700px;
+
+}
+
+.Main-Container{
+    backdrop-filter: blur(20px);
+    background: transparent;
+    width: 510px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 25px  rgba(0, 0, 0, 0.5);
+    animation-name: slide ;
+    animation-duration: 1s;
+
+}
+.Main-Container h1{
+    color: #d9449e;
+    text-align: center;
+    padding: 5PX;
+}
+
+.Main-Container .Fields-Container {
+    margin-top: 30px;
+}
+
+.side-by-side{
+    display: flex;
+    column-gap: 0px;
+}
+
+.side-Field input{
+    background: transparent;
+    color: white;
+    width: 210px;
+    height: 35px;
+    margin: 5px;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255 ,0.3);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px ;
+}
+.side-Field input::placeholder{
+    color: white;
+}
+
+.Input-Field input{
+    background: transparent;
+    color: white;
+    width : 430px;
+    height: 35px;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255 ,0.2);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px ;
+    margin: 5px;
+}
+.Input-Field input::placeholder{
+    color: white;
+}
+
+.submit-button input {
+    width : 430px;
+    height: 35px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0 ,0.2);
+    border-radius: 40px;
+    margin: 5px;
+    padding: 10px 20px 25px 20px ;
+    color: white ;
+    margin-top: 15px;
+    background-color: #d9449e;
+    transition: all 0.3s;
+}
+
+.submit-button input:hover {
+    transform: translateY(-10px);
+}
+
+
+.link {
+    color: white;
+    padding-top: 15px;
+    font-size: 17px;
+}
+
+
+.link p a {
+    color: #d9449e;
+    text-decoration: none   ;
+}
+
+.link  a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes slide {
+    0%{
+            transform: translateY(-150);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100%{
+        ransform: translateY(-10px);
+    }
+}

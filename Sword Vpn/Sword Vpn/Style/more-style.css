@@ -1,0 +1,52 @@
+ body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../Materials/background-4.jpg");
+    background-size: cover;
+
+ }
+
+.text-1{
+    
+    padding: 20px;
+    background-size: cover;
+    color: white;
+
+}
+
+
+.text-1 h2{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.text-1 pre{
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.text-2{
+    
+    padding: 20px;
+    background-size: cover;
+    color: white;
+
+}
+
+
+.text-2 h2{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.text-2 pre{
+    transform: translateX(-5%);
+    font-size: 30px;
+    padding: 20px;
+}
+
